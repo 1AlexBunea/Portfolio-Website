@@ -4,8 +4,7 @@ function Home() {
     return (
         <div className='container' style={{
             maxWidth:'50%',
-            marginLeft:'auto',
-            marginRight:'auto',
+            marginLeft:'10%',
 
         }}>
             <div>
@@ -22,10 +21,11 @@ function Home() {
             <div>
                 <h5 className="display-4 display-sm-2 display-md-3 display-lg-4" style={{
                     color:'rgba(224, 134, 92, 0.959)'
-                }}>An aspiring software engineer based in San Francisco!</h5>
+                }}>an aspiring software engineer based in San Francisco!</h5>
             </div>
             <div style={{
-                maxWidth:'50%'
+                minWidth:100,
+                width:'80%'
             }}>
                 <h5>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. Thank you for visiting my site, feel free to look around. </h5>
                 <br></br>

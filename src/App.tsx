@@ -4,6 +4,9 @@ import Experience from "./Experience"
 import Project from "./Projects"
 import Home from "./Home"
 import Sidebar from "./Sidebar"
+import AnimatedBox from "./RotatingCube"
+import RotatingCube from "./RotatingCube"
+
 
 function App() {
 
@@ -60,18 +63,37 @@ function App() {
                 <button className="custom-link" onClick={() => displayPage(2)}>Projects</button>
               </div>
               <div>
-                <button className="responsive-button">Resume</button>
+                {/* <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">
+                  <img src='linked-in.png' style={{
+                    maxHeight:'5%',
+                    maxWidth:'5%'
+                  }}></img>
+                </a> */}
+                  <button className="responsive-button">Resume</button>
               </div>
             </div>
+            
           </nav>
+
           <div 
-          style={{marginTop:100, 
+          style={{
+            marginTop:150,
             marginLeft:'auto',
             marginRight:"auto",
             maxWidth: 'fit-content',
           }}> {/* this is the div that will have the contents */}
-              {page == 2 ? <Project></Project> : (page == 1 ? <Experience></Experience> : (<Home></Home>))}
-              <Sidebar></Sidebar>
+            <div>
+              <div>
+                {page == 2 ? <Project></Project> : (page == 1 ? <Experience></Experience> : (
+                  <div style={{display:'flex'}}>
+                      <RotatingCube></RotatingCube>
+                      <div>
+                        <Home></Home>
+                      </div>
+                  </div>))}
+              </div>
+            </div>
+            <Sidebar></Sidebar>              
           </div>
       </div>
         

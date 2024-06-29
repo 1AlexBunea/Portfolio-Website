@@ -1,0 +1,68 @@
+.cube-container {
+  width: 20%; /* Adjust size as needed */
+  height: 20%; /* Adjust size as needed */
+  perspective: 800px; /* Adjust perspective depth */
+  margin: 50px auto; /* Adjust position as needed */
+  transition: opacity 1s ease-in-out; /* Add transition for opacity */
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear; /* Adjust duration and timing as needed */
+}
+
+.side {
+  position: absolute;
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  background-color: rgba(182, 32, 32, 0.6); /* Updated color with transparency */
+  border: 2px solid rgba(182, 32, 32, 0.8); /* Updated border with transparency */
+}
+
+.front {
+  transform: rotateX(15deg) rotateY(0deg) translateZ(100px);
+}
+
+.back {
+  transform: rotateX(15deg) rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateX(15deg) rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateX(15deg) rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(105deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-75deg) translateZ(100px);
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .cube-container {
+    opacity: 0; /* Gradually fade out */
+  }
+}
+
+@media (min-width: 1001px) {
+  .cube-container {
+    opacity: 1; /* Ensure opacity is set back to 1 on larger screens */
+  }
+}
