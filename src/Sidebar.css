@@ -1,69 +1,59 @@
 /* src/Sidebar.css */
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10%;
-    min-width: 60px; /* Set your desired minimum width */
-    max-width: 5%;
-    margin-right: 0%;
-    margin-top: 20;
-    height: 100%;
-    background-color: rgb(182, 32, 32);
-    /* background-color: transparent; */
-    color: black;
-    padding: 20px;
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
-    transition: 0.3s ease-in-out; /* Smooth transition for hiding/showing */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10%;
+  min-width: 60px; /* Set your desired minimum width */
+  max-width: 5%;
+  margin-right: 0;
+  margin-top: 20px;
+  height: 100%;
+  background-color: rgb(182, 32, 32);
+  color: black;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition for hiding/showing */
+}
+
+.rotated-items {
+  display: flex; 
+  transform: rotate(90deg); /* Rotate all items by 90 degrees */
+}
+
+.rotated-text, .rotated-text-2, .btn {
+  white-space: nowrap; /* Ensure text doesn't wrap */
+}
+
+/* Media query to hide the sidebar on small screens */
+@media (max-width: 600px) {
+  .sidebar {
+      opacity: 0;
+      visibility: hidden;
   }
-
-
-  .rotated-items {
-    display: flex; 
-    /* flex-direction: column; Arrange items vertically */
-    transform: rotate(90deg); /* Rotate all items by 90 degrees */
 }
 
-.rotated-text {
-  white-space: nowrap; /* ensure text doesn't wrap */
-}
-
-.rotated-text-2 {
-  white-space: nowrap; /* ensure text doesn't wrap */
-}
-
-.btn {
-  white-space: nowrap; /* ensure text doesn't wrap */
-}
-
-  /* Media query to hide the sidebar on small screens */
-  @media (max-width: 600px) {
-    .sidebar {
-        opacity: 0;
-        visibility: hidden;
-    }
-  }
-  
-  /* Ensure the button is visible on larger screens */
-  @media (min-width: 601px) {
-    .sidebar {
+/* Ensure the button is visible on larger screens */
+@media (min-width: 601px) {
+  .sidebar {
       opacity: 1;
       visibility: visible;
-    }
   }
+}
 
-  @media (max-height: 600px) {
-    .sidebar {
-        opacity: 0;
-        visibility: hidden;
-    }
+/* Media query to hide the sidebar on small height screens */
+@media (max-height: 600px) {
+  .sidebar {
+      opacity: 0;
+      visibility: hidden;
   }
-  
-  /* Ensure the button is visible on larger screens */
-  @media (min-height: 601px) {
-    .sidebar {
+}
+
+/* Ensure the button is visible on larger height screens */
+@media (min-height: 601px) {
+  .sidebar {
       opacity: 1;
       visibility: visible;
-    }
   }
+}

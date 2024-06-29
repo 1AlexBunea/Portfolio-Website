@@ -1,16 +1,47 @@
-.custom-link:hover {
+.custom-link-inactive:hover {
     color: rgb(182, 32, 32); 
+    /* text-decoration:underline; */
     /* color: rgba(121, 119, 119, 0.959);  */
 
 }
-.custom-link {
+.custom-link-inactive {
     background-color: transparent;
     color: white;
     border: 0;
     margin-right: 10px;
     margin-left: 10px;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
+
+.custom-link-active {
+  background-color: transparent;
+  text-decoration:underline;
+  color: rgb(182, 32, 32);
+  border: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* .custom-link::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.custom-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.custom-link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(335, 93%, 70%);
+  z-index: -1;
+  transition: transform .3s ease;
+} */
 
 .hyper-link:hover {
     color: #0077B5;
@@ -21,11 +52,6 @@
     font-size: large;
     color: black;
     margin-right: 20px;
-}
-
-.elements {
-    filter: blur(0px) grayscale(0%);
-    
 }
 
 .navbar {

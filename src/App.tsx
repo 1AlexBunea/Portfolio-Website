@@ -58,9 +58,9 @@ function App() {
             <div className="container-fluid">
               <div>
                 <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">LinkedIn</a>
-                <button className="custom-link" onClick={() => displayPage(0)}>Home</button>
-                <button className="custom-link" onClick={() => displayPage(1)}>Experience</button>
-                <button className="custom-link" onClick={() => displayPage(2)}>Projects</button>
+                <button className={page == 0 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(0)}>Home</button>
+                <button className={page == 1 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(1)}>Experience</button>
+                <button className={page == 2 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(2)}>Projects</button>
               </div>
               <div>
                 {/* <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">
@@ -84,16 +84,25 @@ function App() {
           }}> {/* this is the div that will have the contents */}
             <div>
               <div>
-                {page == 2 ? <Project></Project> : (page == 1 ? <Experience></Experience> : (
-                  <div style={{display:'flex'}}>
-                      <RotatingCube></RotatingCube>
-                      <div>
-                        <Home></Home>
-                      </div>
+                {page == 2 ? <Project></Project> : (page == 1 ? 
+                <div>
+                  {/* <RotatingCube></RotatingCube> */}
+                  <div>
+                    <Experience></Experience> 
+                  </div>
+                </div>: (
+                  <div>
+                    <div style={{display:'flex'}}>
+                        <RotatingCube></RotatingCube>
+                        <div>
+                          <Home></Home>
+                        </div>
+                    </div>
                   </div>))}
+                  <Sidebar></Sidebar>
+
               </div>
             </div>
-            <Sidebar></Sidebar>              
           </div>
       </div>
         
