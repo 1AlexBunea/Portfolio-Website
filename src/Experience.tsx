@@ -17,9 +17,22 @@ const description = [
     test2 test1 test1 test1 test1 test1 test1test1 test1 test1test1 test1 test1test1 test1 test1test1 test1 test1 .
     test3 test1 test1 test1 test1 test1 test1test1 test1 test1test1 test1 test1test1 test1 test1test1 test1 test1.
     test4 test1 test1 test1 test1 test1 test1test1 test1 test1test1 test1 test1test1 test1 test1test1 test1 test1.`,
-  "test2",
-  "test3",
-  "test4",
+    `Found 458 patches to 13 Common Vulnerabilities and Exposures within the company's cybersecurity system and assisted with their testing and Implemented within the system. 
+    Ensured 99.9% system uptime through proactive vulnerability management and patch implementation.
+    Learned how to deploy third-party security solutions such as SentinelOne on Raspberry Pi microcomputers using VNC Viewer to bolster endpoint security in factories.
+    `,
+    `Worked in a team to perform market research on a list of 17 innovation management tools.
+    Conducted interviews with 15 executives, managers, and directors from 3 different companies.
+    Quantified company sentiments using scale 1 through 5 on: features, pricing, security, customer service, and brand presence .
+    Analyzed quantitative data using statistical methods and data visualization techniques and developed a weighted scoring model to recommend the most suitable innovation management tool based on the integrated metrics
+    Produced a 37-page report detailing quantitative metrics and qualitative insights for each tool
+    `,
+    `Developed a solar panel crack detection python program that identified and classified cracks in over 2000 images of solar panels.
+    Trained neural network on a dataset of over 1000 electroluminescent images, improving crack detection to an accuracy of 90% .
+    For over 1000 panels, accurately calculated total affected surface area and produced a severity grade.
+    Created the alpha-code for overall production-code that reduced manual inspection time and labor costs by 99% for this use case.
+    Programmed and deployed a collaboration robot performing pick-and-place motion for the pilot production line assisting in the manufacturing of 2900 solar panels daily.
+    `,
 ];
 
 // const test = ```testtesttest```;
@@ -47,9 +60,6 @@ const frameworksAndTechnologies = [
     `Large Language Models`,
     `Embedding Models`,
     `Vector Databases`,
-    `ChromaDB`,
-    `LangChain`,
-    `LlamaIndex`,
     `Retrieval Augmented Generation`,
     `Tokenization`,
     `Embedding Models`,
@@ -57,20 +67,25 @@ const frameworksAndTechnologies = [
     `Neural Networks`,
     `Machine Learning`,
     `Artifical Intelligence`,
+    `PyTorch`,
+    `TensorFlow`,
     `NumPy`,
     `Pandas`,
     `MatPlotLib`,
-    `OpenCV2`,
-    `Pillow`,
 ]
 
 const additionalTools = [
     `Postman`,
     `Git`,
-    `Docker`,
     `Ubuntu`,
     `Kali Linux`,
-
+    `Anaconda`,
+    `ChromaDB`,
+    `LangChain`,
+    `LlamaIndex`,
+    `Ollama`,
+    `OpenCV2`,
+    `Pillow`,
 ]
 
 const Experience = () => {
@@ -86,7 +101,8 @@ const Experience = () => {
         !popoutRef.current.contains(event.target as Node)
       ) {
         setIsOpen(false);
-      }
+    }
+
     };
 
     document.addEventListener("mousedown", handleOutsideClick);
@@ -95,6 +111,18 @@ const Experience = () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isOpen) {
+        const timer = setTimeout(() => {
+            setScrollActiveButton(-1);
+            setActiveButton(-1);
+          }, 300);
+
+        return () => clearTimeout(timer);
+    }
+    
+  }, [isOpen]);
 
   const togglePopout = () => {
     setIsOpen(!isOpen);

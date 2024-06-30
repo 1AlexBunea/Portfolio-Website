@@ -23,6 +23,7 @@ function App() {
   return (
     <>
       <div>
+
           <nav className="navbar fixed-top">
             <div className="container-fluid">
               <div>
@@ -38,16 +39,9 @@ function App() {
                   </button>
               </div>
               <div>
-                {/* <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">
-                  <img src='linked-in.png' style={{
-                    maxHeight:'5%',
-                    maxWidth:'5%'
-                  }}></img>
-                </a> */}
                   <button className="responsive-button">Resume</button>
               </div>
             </div>
-            
           </nav>
 
           <div 
@@ -60,11 +54,11 @@ function App() {
             <div>
               <div>
                 {page == 2 ? <Project></Project> : (page == 1 ? 
-                <div>
-                  <ScrollSidebar></ScrollSidebar>
-                  <Experience></Experience>
-                </div>: (
-                  
+                  <div>
+                    <ScrollSidebar></ScrollSidebar>
+                    <Experience></Experience>
+                  </div>
+                : (
                   <div>
                     <div style={{display:'flex'}}>
                         <RotatingCube></RotatingCube>
@@ -73,7 +67,8 @@ function App() {
                         </div>
                     </div>
                     <Sidebar></Sidebar>
-                  </div>))}
+                  </div>
+                ))}
 
               </div>
             </div>
