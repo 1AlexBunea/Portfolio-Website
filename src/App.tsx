@@ -6,7 +6,7 @@ import Home from "./Home"
 import Sidebar from "./Sidebar"
 import AnimatedBox from "./RotatingCube"
 import RotatingCube from "./RotatingCube"
-
+import ScrollSidebar from "./ScrollSidebar"
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
                   <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')}>
                       <img className='image-button' src='linked-in.png' alt='LinkedIn' />
                   </button>
-                  <button className="custom-link-active image-button">
+                  <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')}>
                       <img className="image-button" src='github-logo.png' alt='GitHub' />
                   </button>
               </div>
@@ -52,7 +52,7 @@ function App() {
 
           <div 
           style={{
-            marginTop:150,
+            marginTop:100,
             marginLeft:'auto',
             marginRight:"auto",
             maxWidth: 'fit-content',
@@ -61,7 +61,7 @@ function App() {
               <div>
                 {page == 2 ? <Project></Project> : (page == 1 ? 
                 <div>
-                  {/* <RotatingCube></RotatingCube> */}
+                  <ScrollSidebar></ScrollSidebar>
                   <Experience></Experience>
                 </div>: (
                   

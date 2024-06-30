@@ -18,9 +18,9 @@
   background-color: transparent;
   text-decoration:underline;
   color: rgb(182, 32, 32);
-  border: 0;
-  margin-right: 10px;
-  margin-left: 10px;
+  border: none;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .hyper-link:hover {

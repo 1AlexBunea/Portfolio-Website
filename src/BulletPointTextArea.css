@@ -1,0 +1,14 @@
+.bullet-point-textarea {
+    border: none;
+    resize: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+  

@@ -4,7 +4,7 @@ import './RotatingCube.css'; // Assuming you have a CSS file for styling
 const RotatingCube: React.FC = () => {
   return (
     <div className="cube-container" style={{
-      marginTop:"7%",
+      marginTop:"15%",
       marginLeft:"5%"
     }}>
       <div className="cube">
