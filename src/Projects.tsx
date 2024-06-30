@@ -1,11 +1,12 @@
-// this is the component that will list my relevant work experience
+import "./Project.css";
 
-function Project() {
-    return (
-        <div>
-            <p>Project page</p>
-        </div>
-    )
+const Project: React.FC = () => {
+
+  return (
+    <div>
+      <p>Projects page</p>
+    </div>
+  );
 }
 
-export default Project
+export default Project;

@@ -22,6 +22,7 @@
   transform: rotate(90deg); /* Rotate all items by 90 degrees */
 }
 
+
 .rotated-text, .rotated-text-2, .btn {
   white-space: nowrap; /* Ensure text doesn't wrap */
 }

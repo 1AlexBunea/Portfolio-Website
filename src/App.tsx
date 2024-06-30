@@ -22,45 +22,20 @@ function App() {
 
   return (
     <>
-      {/* <div>
-      <nav className="navbar navbar-expand-lg" style={{backgroundColor:'#81b29a'}}>
-        <div className="container-fluid">
-          <a className="navbar-brand text-white" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">LinkedIn</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <button className="nav-link custom-link" onClick={() => displayPage(0)}>About Me</button>
-              </li>
-              <li className="nav-item">
-                <button className="nav-link" onClick={() => displayPage(1)}>Experience</button>
-              </li>
-              <li className="nav-item">
-                <button className="nav-link" onClick={() => displayPage(2)}>Projects</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-        <div style={{
-          marginTop:'auto',
-          // backgroundColor:'#f4f1de',
-          backgroundColor: '#5f83aa',
-          height:2000
-        }}>
-          <button className="btn btn-secondary">Hello</button>
-        </div>
-      </div> */}
       <div>
           <nav className="navbar fixed-top">
             <div className="container-fluid">
               <div>
-                <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">LinkedIn</a>
+                {/* <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">LinkedIn</a> */}
                 <button className={page == 0 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(0)}>Home</button>
                 <button className={page == 1 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(1)}>Experience</button>
                 <button className={page == 2 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(2)}>Projects</button>
+                  <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')}>
+                      <img className='image-button' src='linked-in.png' alt='LinkedIn' />
+                  </button>
+                  <button className="custom-link-active image-button">
+                      <img className="image-button" src='github-logo.png' alt='GitHub' />
+                  </button>
               </div>
               <div>
                 {/* <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">
@@ -87,10 +62,9 @@ function App() {
                 {page == 2 ? <Project></Project> : (page == 1 ? 
                 <div>
                   {/* <RotatingCube></RotatingCube> */}
-                  <div>
-                    <Experience></Experience> 
-                  </div>
+                  <Experience></Experience>
                 </div>: (
+                  
                   <div>
                     <div style={{display:'flex'}}>
                         <RotatingCube></RotatingCube>
@@ -98,8 +72,8 @@ function App() {
                           <Home></Home>
                         </div>
                     </div>
+                    <Sidebar></Sidebar>
                   </div>))}
-                  <Sidebar></Sidebar>
 
               </div>
             </div>

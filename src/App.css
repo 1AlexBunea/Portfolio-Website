@@ -1,5 +1,6 @@
 .custom-link-inactive:hover {
     color: rgb(182, 32, 32); 
+
     /* text-decoration:underline; */
     /* color: rgba(121, 119, 119, 0.959);  */
 
@@ -21,27 +22,6 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-
-/* .custom-link::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-.custom-link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.custom-link::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background: hsl(335, 93%, 70%);
-  z-index: -1;
-  transition: transform .3s ease;
-} */
 
 .hyper-link:hover {
     color: #0077B5;
@@ -91,18 +71,20 @@
     }
   }
 
-/* body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('sanfrancisco.jpg');
-    background-size: cover;
-    filter: grayscale(90%);
-    z-index: -1; 
-} */
-/* .hyper-link{
-    color: white;
-} */
+.image-button {
+  position: relative;
+  display: inline-block; /* Ensures button size adjusts to content */
+  overflow: hidden; /* Prevents overflow cropping */
+}
+
+.image-button img {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s ease-out;
+}
+
+.image-button:hover img {
+  transform: scale(1.1); /* Example: scale up image on hover */
+}
+
+
