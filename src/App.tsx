@@ -20,27 +20,56 @@ function App() {
   return (
     <>
       <div>
-
-          <nav className="navbar fixed-top">
+        <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: 'rgb(231, 175, 175)' }}>
             <div className="container-fluid">
-              <div>
-                {/* <a className="hyper-link" href="https://www.linkedin.com/in/alex-bunea-8901751b6/" target="_blank">LinkedIn</a> */}
-                <button className={page == 0 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(0)}>Home</button>
-                <button className={page == 1 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(1)}>Experience</button>
-                <button className={page == 2 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(2)}>Projects</button>
-                  <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')}>
-                      <img className='image-button' src='/linked-in.png' alt='LinkedIn' />
-                  </button>
-                  <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')}>
-                      <img className="image-button" src='/github-logo.png' alt='GitHub' />
-                  </button>
-              </div>
-              <div>
-                  <button className="responsive-button">Resume</button>
+              <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{backgroundColor:'rgb(231, 175, 175)', width: 200}}>
+                <div className="offcanvas-header">
+                  <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Directory</h5>
+                  <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div className="offcanvas-body">
+                  <ul className="navbar-nav justify-content-left flex-grow-1">
+                    <li className="nav-item">
+                      <button
+                        className={`nav-link ${page === 0 ? 'active' : ''}`}
+                        onClick={() => displayPage(0)}>
+                        Home
+                      </button>
+                    </li>
+                    <li className="nav-item">
+                      <button
+                        className={`nav-link ${page === 1 ? 'active' : ''}`}
+                        onClick={() => displayPage(1)}
+                      >
+                        Experience
+                      </button>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <button
+                        className={`nav-link ${page === 2 ? 'active' : ''}`}
+                        onClick={() => displayPage(2)}
+                      >
+                        Projects
+                      </button>
+                    </li>
+                    <li>
+                      <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')} style={{backgroundColor:'transparent', border:'none'}}>
+                        <img className="image-button" src="/linked-in.png" style={{ marginTop: 10, marginLeft: -5 }} alt="LinkedIn" />
+                      </button>
+                    </li>
+                    <li>
+                      <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')} style={{backgroundColor:'transparent', border:'none'}}>
+                        <img className="image-button" src="/github-logo.png" style={{ marginTop: 10, marginLeft: -5}} alt="GitHub" />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </nav>
-
           <div 
           style={{
             marginTop:100,
@@ -74,7 +103,7 @@ function App() {
                           <Home></Home>
                         </div>
                     </div>
-                    <div className="sidebar">
+                    <div className="Sidebar">
 
                     <Sidebar></Sidebar>
                     </div>

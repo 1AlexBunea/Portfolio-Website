@@ -1,44 +1,37 @@
-.custom-link-inactive:hover {
-    color: rgb(182, 32, 32); 
 
-    /* text-decoration:underline; */
-    /* color: rgba(121, 119, 119, 0.959);  */
-
-}
-.custom-link-inactive {
-    background-color: transparent;
-    color: white;
-    border: 0;
-    margin-right: 10px;
-    margin-left: 10px;
-    /* text-decoration: none; */
+.nav-link {
+  color: white !important; /* Default text color with !important */
+  background-color: transparent !important; /* No background color */
+  padding: 10px 20px; /* Add padding */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for text color and underline */
 }
 
-.custom-link-active {
-  background-color: transparent;
-  text-decoration:underline;
-  color: rgb(182, 32, 32);
-  border: none;
-  margin-right: 5px;
-  margin-left: 5px;
+.nav-link:hover {
+  color: rgb(182, 32, 32) !important; /* Change text color to red on hover with !important */
 }
 
-.hyper-link:hover {
-    color: #0077B5;
-}
-
-.hyper-link {
-    text-decoration: none;
-    font-size: large;
-    color: black;
-    margin-right: 20px;
+.nav-link.active {
+  color: rgb(182, 32, 32) !important; /* Change text color to red when active with !important */
+  text-decoration: underline !important; /* Underline the text when active with !important */
 }
 
 .navbar {
-    min-height: 60px;
-    /* max-height: 5%; */
-    background-color: #c4ad9d;
+  background-color: rgb(231, 175, 175);
 }
+
+.image-button img {
+  width: 30px; /* Adjust image size */
+  height: 30px;
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.image-button img:hover {
+  transform: scale(1.2); /* Increase scale on hover */
+}
+
 
 
 .responsive-button {
@@ -72,6 +65,8 @@
   }
 
 .image-button {
+  width: 20;
+  height: 20;
   position: relative;
   display: inline-block; /* Ensures button size adjusts to content */
   overflow: hidden; /* Prevents overflow cropping */
@@ -93,13 +88,6 @@
   }
 } */
 
-/* Ensure the button is visible on larger screens */
-/* @media (min-width: 401px) {
-  .navbar {
-    opacity: 1;
-    visibility: visible;
-  }
-} */
 
 @keyframes slideInLeft {
   from { transform: translateX(-100%); }
