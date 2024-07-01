@@ -11,7 +11,7 @@ function Home() {
             }}>
                 <div>
                     <header>
-                        <h5>Hello, I am...</h5>
+                        <h5>Hello, I am</h5>
                     </header>
                 </div>
                 <div>
