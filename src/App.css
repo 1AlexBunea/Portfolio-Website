@@ -87,20 +87,19 @@
   transform: scale(1.1); /* Example: scale up image on hover */
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .navbar {
-    opacity: 0;
-    visibility: hidden;
+    height: 120px;
   }
-}
+} */
 
 /* Ensure the button is visible on larger screens */
-@media (min-width: 401px) {
+/* @media (min-width: 401px) {
   .navbar {
     opacity: 1;
     visibility: visible;
   }
-}
+} */
 
 @keyframes slideInLeft {
   from { transform: translateX(-100%); }
