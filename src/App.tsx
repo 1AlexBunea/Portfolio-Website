@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar"
 import AnimatedBox from "./RotatingCube"
 import RotatingCube from "./RotatingCube"
 import ScrollSidebar from "./ScrollSidebar"
+import Terminal from "./Terminal"
 
 function App() {
 
@@ -47,26 +48,40 @@ function App() {
           <div 
           style={{
             marginTop:100,
-            marginLeft:'auto',
-            marginRight:"auto",
-            maxWidth: 'fit-content',
           }}> {/* this is the div that will have the contents */}
             <div>
               <div>
-                {page == 2 ? <Project></Project> : (page == 1 ? 
-                  <div>
+                {page == 2 ? 
+                <div className="d-flex zoom-in">
+                  <div style={{paddingLeft:50, marginTop:180}}>
+                    <Terminal></Terminal>
+                  </div>
+                  <div className='project-div' style={{marginLeft:'1%', marginRight:'1%'}}>
+
+                    <Project></Project>
+                  </div>
+                </div>
+                : (page == 1 ? 
+                  <div className="fade-in" style={{
+                    marginLeft:'auto',
+                    marginRight:"auto",
+                    maxWidth: 'fit-content',
+                  }}>
                     <ScrollSidebar></ScrollSidebar>
                     <Experience></Experience>
                   </div>
                 : (
                   <div>
-                    <div style={{display:'flex'}}>
+                    <div className="slide-in-left" style={{display:'flex'}}>
                         <RotatingCube></RotatingCube>
                         <div>
                           <Home></Home>
                         </div>
                     </div>
+                    <div className="sidebar">
+
                     <Sidebar></Sidebar>
+                    </div>
                   </div>
                 ))}
 

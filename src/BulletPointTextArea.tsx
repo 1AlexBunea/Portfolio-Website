@@ -9,7 +9,7 @@ const BulletPointTextArea: React.FC<BulletPointTextAreaProps> = ({ description }
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Split the description into sentences based on periods
-  const sentences = description.split('.').map(sentence => sentence.trim()).filter(sentence => sentence.length > 0);
+  const sentences = description.split('. ').map(sentence => sentence.trim()).filter(sentence => sentence.length > 0);
 
   // Remove periods and commas from the end of each sentence
   const cleanedSentences = sentences.map(sentence => sentence.replace(/[.,\s]*$/, ''));

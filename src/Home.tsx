@@ -31,7 +31,7 @@ function Home() {
                 }}>
                     <h5>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. Thank you for visiting my site, feel free to look around. </h5>
                     <br></br>
-                    <h6>I am passionate about coding, software, mathematics and more. I have been coding since 7th grade, and have only enjoyed it more as I've continued to learn.</h6>
+                    <h6>Driven by a deep curiosity and love for technology, I am passionate about computer science, constantly seeking to innovate and solve complex problems through coding and software development.</h6>
                 </div>
             </div>
             <div style={{paddingBottom:50}}>

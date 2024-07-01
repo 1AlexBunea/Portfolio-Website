@@ -1,0 +1,55 @@
+/* Projects.css */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow components to wrap if needed */
+  justify-content: center; /* Center align items horizontally */
+}
+
+.component-item {
+  height: 400px; /* Fixed height for all component items */
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden; /* Hide overflow content */
+  transition: transform 0.3s ease-in-out; /* Add ease-in-out transition for smooth scaling */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.component-item:hover {
+  transform: scale(1.2); /* Scale on hover */
+}
+
+.component-item button {
+  width: 100%; /* Ensure button takes full width */
+  display: block; /* Make button a block element */
+  text-align: left; /* Align text to the left */
+}
+
+.component-item img {
+  width: 100%; /* Ensure image fills the container */
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the image covers the container */
+  background-color: #ee8d8d;
+}
+
+/* .component-item:hover img {
+    filter: hue-rotate(30deg);
+} */
+
+.component-item .description {
+  padding: 10px;
+  height: 45px;
+  background-color: #c42525;
+  color: white;
+  text-align: center;
+  flex-grow: 1; /* Allow description to expand vertically */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; 
+}
+
+.component-item .description p {
+  max-width: 100%; /* Ensure paragraph respects container width */
+  overflow-wrap: break-word; /* Wrap long words */
+  word-wrap: break-word; /* Compatibility for older browsers */
+}

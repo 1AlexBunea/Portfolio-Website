@@ -18,8 +18,9 @@
   position: absolute;
   width: 200px; /* Adjust size as needed */
   height: 200px; /* Adjust size as needed */
-  background-color: rgba(182, 32, 32, 0.6); /* Updated color with transparency */
-  border: 2px solid rgba(182, 32, 32, 0.8); /* Updated border with transparency */
+  line-height: 200px;
+  background-color: rgba(209, 209, 209, 0.6); /* Updated color with transparency */
+  border: 2px solid rgba(0, 0, 0, 0.8); /* Updated border with transparency */
 }
 
 .front {
