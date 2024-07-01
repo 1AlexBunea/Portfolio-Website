@@ -1,21 +1,6 @@
-import React, { useState, useEffect } from "react";
 import "./ScrollSidebar.css";
-import ButtonAnimation from "./BulletPointTextArea";
 
 const ScrollSidebar = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleClick = (id: string) => {
     let topValue = 0; // Default top value

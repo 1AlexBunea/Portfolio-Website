@@ -1,6 +1,5 @@
 // Projects.js or Components.js
 
-import React from 'react';
 import './Projects.css'; // Import component styles
 
 //add more projects here
@@ -15,10 +14,6 @@ const components = [
   // },
 ];
 const Projects = () => {
-  const handleClick = (id) => {
-    console.log(`Component clicked: ${id}`);
-    // Add click handling logic here
-  };
 
   return (
     <div className="projects-container" style={{width:'100%'}}>

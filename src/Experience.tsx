@@ -160,7 +160,7 @@ const Experience = () => {
 
       <div className="d-flex">
         <div className="indicator-container">
-          {jobs.map((job, index) => (
+          {jobs.map((_, index) => (
             <div
               key={index}
               className={`indicator ${

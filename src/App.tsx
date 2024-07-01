@@ -4,7 +4,6 @@ import Experience from "./Experience"
 import Project from "./Projects"
 import Home from "./Home"
 import Sidebar from "./Sidebar"
-import AnimatedBox from "./RotatingCube"
 import RotatingCube from "./RotatingCube"
 import ScrollSidebar from "./ScrollSidebar"
 import Terminal from "./Terminal"
@@ -17,9 +16,6 @@ function App() {
   // 3 => 'Projects' page
   const [page, displayPage] = useState(0) 
   
-  function handleClick() {
-
-  }
 
   return (
     <>

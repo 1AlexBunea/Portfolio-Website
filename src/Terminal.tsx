@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Terminal.css';
 
 const Terminal = () => {
@@ -7,8 +7,8 @@ const Terminal = () => {
   const [output, setOutput] = useState('');
   const [currentCommand, setCurrentCommand] = useState('');
   const [isVisible, setIsVisible] = useState(true);
-  const outputRef = useRef(null);
-
+  const outputRef = useRef<HTMLPreElement>(null);
+  
   const commands = [
     "ls -la",
     "git status",
