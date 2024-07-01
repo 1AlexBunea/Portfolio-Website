@@ -29,10 +29,10 @@ function App() {
                 <button className={page == 1 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(1)}>Experience</button>
                 <button className={page == 2 ? "custom-link-active" : "custom-link-inactive"} onClick={() => displayPage(2)}>Projects</button>
                   <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')}>
-                      <img className='image-button' src='linked-in.png' alt='LinkedIn' />
+                      <img className='image-button' src='/linked-in.png' alt='LinkedIn' />
                   </button>
                   <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')}>
-                      <img className="image-button" src='github-logo.png' alt='GitHub' />
+                      <img className="image-button" src='/github-logo.png' alt='GitHub' />
                   </button>
               </div>
               <div>
