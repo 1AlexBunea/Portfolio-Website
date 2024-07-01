@@ -5,7 +5,7 @@ import './Projects.css'; // Import component styles
 //add more projects here
 const components = [
   { id: 1, 
-    image: 'nfl-logo.png', 
+    image: './src/nfl-logo.png', 
     description: `NFL Prospect API` 
   },
   // { id: 1, 
