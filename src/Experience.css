@@ -59,13 +59,17 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: flex-start; /* Align to the top */
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    padding-top: 10%; /* Add padding to the top */
+    overflow: auto;
 }
 
 .popout-container.show {
@@ -80,14 +84,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: scale(0.9);
     transition: transform 0.3s ease, width 0.3s ease; /* Added width transition */
-    width: 50%;
-    /* min-width: 300; */
+    width: 80%;
     max-width: 600px; /* Optional: Set max-width for responsive design */
+    margin-top: 20px; /* Add margin to the top */
+    margin-bottom: 20px; /* Add margin to the bottom to ensure it's not cut off */
 }
 
 .popout-container.show .popout-content {
     transform: scale(1);
 }
+
 
 h4 {
     width: 100%; /* Set popout width to 50% */

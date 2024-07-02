@@ -56,12 +56,12 @@ function App() {
                       </button>
                     </li>
                     <li>
-                      <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')} style={{backgroundColor:'transparent', border:'none'}}>
+                      <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')} style={{backgroundColor:'transparent', border:'none', paddingLeft:15}}>
                         <img className="image-button" src="/linked-in.png" style={{ marginTop: 10, marginLeft: -5 }} alt="LinkedIn" />
                       </button>
                     </li>
                     <li>
-                      <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')} style={{backgroundColor:'transparent', border:'none'}}>
+                      <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')} style={{backgroundColor:'transparent', border:'none', paddingLeft:15}}>
                         <img className="image-button" src="/github-logo.png" style={{ marginTop: 10, marginLeft: -5}} alt="GitHub" />
                       </button>
                     </li>
@@ -78,9 +78,9 @@ function App() {
               <div>
                 {page == 2 ? 
                 <div className="d-flex zoom-in">
-                  <div style={{paddingLeft:50, marginTop:180}}>
+                  {/* <div style={{paddingLeft:50, marginTop:180}}>
                     <Terminal></Terminal>
-                  </div>
+                  </div> */}
                   <div className='project-div' style={{marginLeft:'1%', marginRight:'1%'}}>
 
                     <Project></Project>

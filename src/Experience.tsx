@@ -198,7 +198,7 @@ const Experience = () => {
           ref={popoutRef}
           onClick={() => setIsOpen(false)}
         >
-          <div className="popout-content" onClick={handleContentClick}>
+          <div className="popout-content" onClick={handleContentClick} style={{marginTop:''}}>
             <h2>{company[activeButton]}</h2>
             {activeButton != -1 ? <BulletPointTextArea description={description[activeButton]}></BulletPointTextArea> : null}
           </div>

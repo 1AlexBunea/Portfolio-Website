@@ -20,6 +20,12 @@
   background-color: rgb(231, 175, 175);
 }
 
+.no-focus:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 .image-button img {
   width: 30px; /* Adjust image size */
   height: 30px;
