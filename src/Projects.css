@@ -1,13 +1,8 @@
 /* Projects.css */
 
-.projects-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow components to wrap if needed */
-  justify-content: center; /* Center align items horizontally */
-}
 
 .component-item {
-  height: 400px; /* Fixed height for all component items */
+  height: 600; /* Fixed height for all component items */
   padding-left: 5px;
   padding-right: 5px;
   overflow: hidden; /* Hide overflow content */
@@ -17,7 +12,7 @@
 }
 
 .component-item:hover {
-  transform: scale(1.2); /* Scale on hover */
+  transform: scale(1.1); /* Scale on hover */
 }
 
 .component-item button {

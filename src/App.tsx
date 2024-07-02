@@ -77,11 +77,11 @@ function App() {
             <div>
               <div>
                 {page == 2 ? 
-                <div className="d-flex zoom-in">
+                <div className="zoom-in">
                   {/* <div style={{paddingLeft:50, marginTop:180}}>
                     <Terminal></Terminal>
                   </div> */}
-                  <div className='project-div' style={{marginLeft:'1%', marginRight:'1%'}}>
+                  <div>
 
                     <Project></Project>
                   </div>
