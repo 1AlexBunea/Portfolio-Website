@@ -6,7 +6,7 @@ function Home() {
     return (
         <div>
             <div className='container' style={{
-                maxWidth:'50%',
+                maxWidth:'80%',
                 marginLeft:'10%',
             }}>
                 <div>

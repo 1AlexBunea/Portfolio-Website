@@ -104,8 +104,7 @@ function App() {
                         </div>
                     </div>
                     <div className="Sidebar">
-
-                    <Sidebar></Sidebar>
+                      <Sidebar></Sidebar>
                     </div>
                   </div>
                 ))}
