@@ -6,7 +6,7 @@ import Home from "./Home"
 import Sidebar from "./Sidebar"
 import RotatingCube from "./RotatingCube"
 import ScrollSidebar from "./ScrollSidebar"
-import Terminal from "./Terminal"
+// import Terminal from "./Terminal"
 
 function App() {
 
