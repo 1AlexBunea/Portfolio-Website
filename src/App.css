@@ -1,4 +1,33 @@
 
+.homepage {
+  height: 100vh; /* Full viewport height */
+  background-image: url('red-bg.png'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.white-text {
+  color: white;
+  font-size: 18px;
+  max-width: 600px; /* Adjust as needed */
+  line-height: 1.6;
+}
+
+.content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
 .nav-link {
   color: white !important; /* Default text color with !important */
   background-color: transparent !important; /* No background color */

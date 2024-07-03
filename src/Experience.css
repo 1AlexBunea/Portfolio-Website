@@ -13,7 +13,7 @@
 .button-item {
     background-color: transparent;
     border: 1px solid black;
-    color: #000;
+    color: black;
     padding: 10px;
     width: 100%; /* Make button take full width */
     text-align: left;

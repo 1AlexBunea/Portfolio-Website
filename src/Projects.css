@@ -1,36 +1,30 @@
-/* Projects.css */
-
-
-.component-item {
-  height: 600; /* Fixed height for all component items */
+/* .component-item {
+  height: 600; 
   padding-left: 5px;
   padding-right: 5px;
-  overflow: hidden; /* Hide overflow content */
-  transition: transform 0.3s ease-in-out; /* Add ease-in-out transition for smooth scaling */
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack items vertically */
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; 
+  display: flex; 
+  flex-direction: column;
 }
 
 .component-item:hover {
-  transform: scale(1.1); /* Scale on hover */
+  transform: scale(1.1); 
 }
 
 .component-item button {
-  width: 100%; /* Ensure button takes full width */
-  display: block; /* Make button a block element */
-  text-align: left; /* Align text to the left */
+  width: 100%; 
+  display: block;
+  text-align: left; 
 }
 
 .component-item img {
-  width: 100%; /* Ensure image fills the container */
+  width: 100%; 
   border-radius: 10px;
-  object-fit: cover; /* Ensure the image covers the container */
+  object-fit: cover; 
   background-color: #ee8d8d;
 }
 
-/* .component-item:hover img {
-    filter: hue-rotate(30deg);
-} */
 
 .component-item .description {
   padding: 10px;
@@ -38,13 +32,96 @@
   background-color: #c42525;
   color: white;
   text-align: center;
-  flex-grow: 1; /* Allow description to expand vertically */
-  overflow: hidden; /* Hide overflow content */
+  flex-grow: 1; 
+  overflow: hidden;
   text-overflow: ellipsis; 
 }
 
 .component-item .description p {
-  max-width: 100%; /* Ensure paragraph respects container width */
-  overflow-wrap: break-word; /* Wrap long words */
-  word-wrap: break-word; /* Compatibility for older browsers */
+  max-width: 100%; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+} */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  background: rgb(255, 123, 123);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  max-width: 60%;
+  height: 400px; /* Fixed height for uniformity */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.initial-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(182, 32, 32, 0.9);
+  transition: visibility 0.3s, opacity 0.3s;
+  box-sizing: border-box;
+}
+
+.image-container .hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 0, 0));
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-container .hover-overlay p {
+  font-size: 18px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-item:hover .image-container img {
+  filter: brightness(50%);
+}
+
+.gallery-item:hover .image-container .hover-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gallery-item:hover .initial-text {
+  visibility: hidden;
+  opacity: 0;
 }
