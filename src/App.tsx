@@ -85,7 +85,7 @@ function App() {
               <div>
                 {page == 3 ? 
 
-                  <div className="homepage fade-in">
+                  <div className="homepage fade-in" style={{backgroundImage:'url("red-bg.png")'}}>
                     <div className="content">
                       <header className="header">
                       <h1 className="fw-bold display-1" style={{
