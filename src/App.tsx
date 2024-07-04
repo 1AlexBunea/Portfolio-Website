@@ -6,6 +6,7 @@ import Home from "./Home"
 import Sidebar from "./Sidebar"
 import RotatingCube from "./RotatingCube"
 import ScrollSidebar from "./ScrollSidebar"
+import Header from "./Header"
 // import Terminal from "./Terminal"
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     <>
       <div>
         {page != 3 && 
-          <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: 'rgb(231, 175, 175)' }}>
+          <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: 'rgb(231, 175, 175)', }}>
             <div className="container-fluid">
               <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
@@ -62,7 +63,7 @@ function App() {
                         Projects
                       </button>
                     </li>
-                    <li>
+                    {/* <li>
                       <button className="custom-link-active image-button" onClick={() => window.open('https://www.linkedin.com/in/alex-bunea-8901751b6/')} style={{backgroundColor:'transparent', border:'none', paddingLeft:15}}>
                         <img className="image-button" src="/linked-in.png" style={{ marginTop: 10, marginLeft: -5 }} alt="LinkedIn" />
                       </button>
@@ -71,7 +72,7 @@ function App() {
                       <button className="custom-link-active image-button" onClick={() => window.open('https://github.com/1AlexBunea')} style={{backgroundColor:'transparent', border:'none', paddingLeft:15}}>
                         <img className="image-button" src="/github-logo.png" style={{ marginTop: 10, marginLeft: -5}} alt="GitHub" />
                       </button>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -84,8 +85,14 @@ function App() {
             <div>
               <div>
                 {page == 3 ? 
-
+                  
                   <div className="homepage fade-in" style={{backgroundImage:'url("red-bg.png")'}}>
+                    {/* <div style={{width:'40%', display:'flex', marginTop:'1%', border:'2px solid white', borderRadius:20,}}>
+                      <button className="header-button" style={{}}>About</button>
+                      <button className="header-button">Experience</button>
+                      <button className="header-button">Projects</button>
+                    </div> */}
+                    <Header displayPage={displayPage}></Header>
                     <div className="content">
                       <header className="header">
                       <h1 className="fw-bold display-1" style={{

@@ -5,13 +5,22 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* text-align: center; */
 }
 
 .header {
   margin-top: 20px;
+}
+
+.header-button {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: transparent;
+  padding-left: 3%;
+  border: none;
+  color: white
 }
 
 .white-text {
@@ -22,6 +31,7 @@
 }
 
 .content {
+  margin-top:10%;
   margin-left: 5%;
   margin-right: 5%;
 }
