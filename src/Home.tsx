@@ -6,14 +6,8 @@ function Home() {
     return (
         <div>
             <div className='container' style={{
-                maxWidth:'80%',
                 marginLeft:'10%',
             }}>
-                <div>
-                    <header>
-                        <h5>Hello, I am...</h5>
-                    </header>
-                </div>
                 <div>
                     <h1 className="fw-bold display-1 display-sm-2 display-md-3 display-lg-4" style={{
                         // fontSize:'100px',
@@ -22,16 +16,30 @@ function Home() {
                 </div>
                 <div>
                     <h5 className="display-4 display-sm-2 display-md-3 display-lg-4" style={{
-                        color:'rgba(224, 134, 92, 0.959)'
-                    }}>an aspiring software engineer based in San Francisco!</h5>
+                        color:'rgba(224, 134, 92, 0.959)',
+                        maxWidth:'80%'
+                    }}>an aspiring software engineer based in San Francisco</h5>
                 </div>
                 <div style={{
                     minWidth:100,
                     width:'80%'
                 }}>
-                    <h5>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. Thank you for visiting my site, feel free to look around. </h5>
+                    <h4>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. Thank you for visiting my site, feel free to look around. </h4>
                     <br></br>
-                    <h6>Driven by a deep curiosity and love for technology, I am passionate about computer science, constantly seeking to innovate and solve complex problems through coding and software development.</h6>
+                    <h5 style={{color:'rgb(255, 121, 31)'}}>With a strong background in software development and a keen interest in innovative technologies, I strive to create impactful solutions. 
+                        Residing in the vibrant Bay Area, I enjoy collaborating on exciting projects, continuously learning, and pushing the boundaries of what's 
+                        possible in the tech world. Let's connect and explore new opportunities together!
+                    </h5>
+                    <br></br>
+                    <div>
+                        <button className='link-button' style={{padding:10, marginRight: 10}} onClick={() => window.open("https://www.linkedin.com/in/alex-bunea-8901751b6/")}>
+                            <img src='linked-in.png' style={{height:50, width:50}}></img>
+                        </button>
+                        <button className='link-button' style={{padding:10}} onClick={() => window.open("https://github.com/1AlexBunea")}>
+                            <img src='github-logo.png' style={{height:50, width:50}}></img>
+                        </button>
+                    </div>
+
                 </div>
             </div>
             <div style={{paddingBottom:50}}>

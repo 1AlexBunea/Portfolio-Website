@@ -1,0 +1,9 @@
+.link-button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.link-button:hover {
+    transform: scale(1.2);
+}
