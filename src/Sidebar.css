@@ -21,14 +21,14 @@
 }
 
 /* Media query to hide the sidebar on small screens */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .sidebar {
     transform: translateX(100%);
   }
 }
 
 /* Ensure the button is visible on larger screens */
-@media (min-width: 601px) {
+@media (min-width: 1001px) {
   .sidebar {
       opacity: 1;
       visibility: visible;

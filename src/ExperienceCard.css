@@ -1,0 +1,53 @@
+.experience-card {
+  width: 100%;
+  border: 1px solid rgb(255, 121, 31);
+  border-radius: 8px;
+  margin: 8px 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card-header {
+  padding: 16px;
+  color: rgb(255, 121, 31)
+}
+
+.card-header h3 {
+  margin: 0 0 8px 0;
+}
+
+.card-header h4 {
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.card-description {
+  overflow: hidden;
+  transition: height 0.3s ease;
+  color: white;
+  background-color: transparent;
+}
+
+.description-content {
+  padding: 16px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.experience-card.expanded .description-content {
+  opacity: 1;
+}
+
+.card-description p {
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

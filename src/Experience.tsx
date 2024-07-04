@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Experience.css";
 import BulletPointTextArea from "./BulletPointTextArea";
-import BulletPointList from "./BulletPointList";
+import ArrayList from "./ArrayList";
+import ExperiencePage from "./ExperiencePage";
 
 
 const jobs = [
@@ -38,6 +39,13 @@ const description = [
     `,
 ];
 
+const duration = [
+  {"start": "May 2024", "end": "August 2024"},
+  {"start": "July 2022", "end": "August 2022"},
+  {"start": "March 2022", "end": "July 2022"},
+  {"start": "June 2021", "end": "August 2021"}
+]
+
 // const test = ```testtesttest```;
 
 const company = [
@@ -48,52 +56,54 @@ const company = [
 ];
 
 const codingLanguages = [
-    `Python`,
-    `Java`,
-    `C`,
-    `HTML / CSS / JavaScript`,
+  {"name":'HTML / CSS / JavaScript', "experience": 4},
+  {"name":'Python', "experience": 4},
+  {"name":'Java', "experience": 2},
+  {"name":'C', "experience": 1},
+
+  // {"name":'Natural Language Processing', 'experience': '4 years'}
 ]
 
 const frameworksAndTechnologies = [
-    `React TypeScript and JavaScript`,
-    `Express`,
-    `NodeJS`,
-    `FastAPI`,
-    `Flask`,
-    `Large Language Models`,
-    `Embedding Models`,
-    `Vector Databases`,
-    `Retrieval Augmented Generation`,
-    `Tokenization`,
-    `Embedding Models`,
-    `Natural Language Processing`,
-    `Neural Networks`,
-    `Machine Learning`,
-    `Artifical Intelligence`,
-    `PyTorch`,
-    `TensorFlow`,
-    `NumPy`,
-    `Pandas`,
-    `MatPlotLib`,
+  { 'name': 'Image Processing', 'experience': 3 },
+  { 'name': 'Neural Networks', 'experience': 3 },
+  { 'name': 'Machine Learning', 'experience': 3 },
+  { 'name': 'NumPy', 'experience': 3 },
+  { 'name': 'MatPlotLib', 'experience': 3 },
+  { 'name': 'Artifical Intelligence', 'experience': 2 },
+  { 'name': 'React TypeScript and JavaScript', 'experience': 1 },
+  { 'name': 'Express', 'experience': 1 },
+  { 'name': 'NodeJS', 'experience': 1 },
+  { 'name': 'FastAPI', 'experience': 1 },
+  { 'name': 'Flask', 'experience': 1 },
+  { 'name': 'Large Language Models', 'experience': 1 },
+  { 'name': 'Embedding Models', 'experience': 1 },
+  { 'name': 'Vector Databases', 'experience': 1 },
+  { 'name': 'Retrieval Augmented Generation', 'experience': 1 },
+  { 'name': 'Tokenization', 'experience': 1 },
+  { 'name': 'Embedding Models', 'experience': 1 },
+  { 'name': 'Natural Language Processing', 'experience': 1 },
+  { 'name': 'PyTorch', 'experience': 1 },
+  { 'name': 'TensorFlow', 'experience': 1 },
+  { 'name': 'Pandas', 'experience': 1 },
 ]
 
 const additionalTools = [
-    `Postman`,
-    `Git`,
-    `Ubuntu`,
-    `Kali Linux`,
-    `Anaconda`,
-    `ChromaDB`,
-    `LangChain`,
-    `LlamaIndex`,
-    `Ollama`,
-    `OpenCV2`,
-    `Pillow`,
+  { "name": "OpenCV2", "experience": 3 },
+  { "name": "Pillow", "experience": 3 },
+  { "name": "Git", "experience": 2 },
+  { "name": "Ubuntu", "experience": 2 },
+  { "name": "Kali Linux", "experience": 2 },
+  { "name": "Anaconda", "experience": 1 },
+  { "name": "ChromaDB", "experience": 1 },
+  { "name": "LangChain", "experience": 1 },
+  { "name": "LlamaIndex", "experience": 1 },
+  { "name": "Ollama", "experience": 1 },
+  { "name": "Postman", "experience": 1 },
 ]
 
 const Experience = () => {
   const [activeButton, setActiveButton] = useState<number>(-1);
-  const [activeButtonScroll, setScrollActiveButton] = useState<number>(-1);
   const [isOpen, setIsOpen] = useState(false);
   const popoutRef = useRef<HTMLDivElement>(null);
 
@@ -118,7 +128,6 @@ const Experience = () => {
   useEffect(() => {
     if (!isOpen) {
         const timer = setTimeout(() => {
-            setScrollActiveButton(-1);
             setActiveButton(-1);
           }, 300);
 
@@ -127,22 +136,14 @@ const Experience = () => {
     
   }, [isOpen]);
 
-  const togglePopout = () => {
-    setIsOpen(!isOpen);
-  };
 
   const handleContentClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
   };
 
-  const handleClick = (index: number) => {
-    setActiveButton(index);
-    togglePopout();
-  };
-
   return (
     <div
-      style={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 50, maxWidth:1000, marginTop:100 }}
+      style={{ marginLeft: '5%', marginRight: '5%', paddingBottom: 50, maxWidth:1000, marginTop:100 }}
       id="professional-experience"
     >
       {/* <ScrollSidebar></ScrollSidebar> */}
@@ -158,8 +159,10 @@ const Experience = () => {
           Professional Experience
         </h2>
       </div>
-
-      <div className="d-flex">
+      <div>
+        <ExperiencePage companies={company} titles={jobs} durations={duration} descriptions={description}></ExperiencePage>
+      </div>
+      {/* <div className="d-flex">
         <div className="indicator-container">
           {jobs.map((_, index) => (
             <div
@@ -191,7 +194,8 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </div>
+        
+      </div> */}
 
       <div>
         <div
@@ -219,12 +223,12 @@ const Experience = () => {
       <h2
         className="display-6"
         style={{
-          color: "rgba(224, 134, 92, 0.959)",
+          color: "rgb(248, 106, 11)",
         }}
       >
         University of Texas at Austin
       </h2>
-      <div style={{ paddingLeft: 20 }}>
+      <div>
         <h4>GPA</h4>
         <h5 className="info-h5-header">
             3.92 (Honors)
@@ -251,7 +255,7 @@ const Experience = () => {
       >
         Coding Languages
       </h1>
-      <BulletPointList items={codingLanguages}></BulletPointList>
+      <ArrayList skills={codingLanguages}></ArrayList>
 
       <h1
         className="display-1 display-sm-2 display-md-3 display-lg-4"
@@ -264,7 +268,7 @@ const Experience = () => {
       >
         Frameworks & Technologies
       </h1>
-      <BulletPointList items={frameworksAndTechnologies}></BulletPointList>
+      <ArrayList skills={frameworksAndTechnologies}></ArrayList>
 
       <h1
         className="display-1 display-sm-2 display-md-3 display-lg-4"
@@ -277,7 +281,7 @@ const Experience = () => {
       >
         Additional Tools
       </h1>
-        <BulletPointList items={additionalTools}></BulletPointList>
+        <ArrayList skills={additionalTools}></ArrayList>
     </div>
   );
 };

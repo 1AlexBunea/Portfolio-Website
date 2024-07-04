@@ -1,0 +1,7 @@
+.experience-page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+  }

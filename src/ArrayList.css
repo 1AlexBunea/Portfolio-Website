@@ -1,0 +1,46 @@
+.bullet-point-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bullet-point-item {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 121, 31);
+  cursor: pointer;
+  text-align: center;
+  min-width: 60px; /* Minimum width for each item */
+  width: fit-content; /* Ensures width fits content */
+}
+
+.bullet-point-name {
+  color: rgb(255, 121, 31);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bullet-point-experience {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bullet-point-item:hover .bullet-point-experience {
+  opacity: 1;
+}
+
+.bullet-point-item:hover .bullet-point-name {
+  opacity: 0;
+}

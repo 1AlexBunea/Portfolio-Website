@@ -12,8 +12,8 @@
 
 .button-item {
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid rgb(255, 121, 31);
+    color: rgb(255, 121, 31);
     padding: 10px;
     width: 100%; /* Make button take full width */
     text-align: left;
@@ -47,7 +47,7 @@
 }
 
 .indicator.active {
-    background-color: black;
+    background-color: rgb(255, 121, 31);
 }
 
 .experience-div {
@@ -100,10 +100,11 @@
 h4 {
     width: 100%; /* Set popout width to 50% */
     max-width: 600px;
+    color: black
 }
 .info-h5-header {
     width: 100%; /* Set popout width to 50% */
-    color: #707070;
+    color: rgb(255, 121, 31);
     padding-left: 20px;
     max-width: 600px;
 }
