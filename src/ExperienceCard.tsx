@@ -61,6 +61,7 @@ const ExperienceCard: React.FC<JobExperience> = ({
           <h3>{title}</h3>
           <h4>{company}</h4>
           <p>{duration.start} - {duration.end}</p>
+          <h6>Click To Toggle</h6>
         </div>
         <div 
           className="card-description" 

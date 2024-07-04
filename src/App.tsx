@@ -16,7 +16,12 @@ function App() {
   // 2 => 'Experience' page
   // 3 => 'Projects' page
   const [page, displayPage] = useState(3) 
-  
+  const name = "Alex Bunea";
+  const renderLetters = (text: string) => {
+    return text.split('').map((char, index) => (
+        <span key={index} className="letter">{char === ' ' ? '\u00A0' : char}</span>
+      ));
+  };
 
   return (
     <>
@@ -29,11 +34,10 @@ function App() {
                   <div className="homepage fade-in" style={{backgroundImage:'url("red-bg.png")'}}>
                     <Header displayPage={displayPage}></Header>
                     <div className="content">
-                      <header className="header">
-                      <h1 className="fw-bold display-1" style={{
-                          // fontSize:'100px',
-                          color:'white'
-                      }}>Alex Bunea</h1>
+                    <header className="header">
+                      <h1 className="fw-bold display-1" style={{ color: 'white' }}>
+                          {renderLetters(name)}
+                      </h1>
                       </header>
                       <p className="white-text">
                       Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. 

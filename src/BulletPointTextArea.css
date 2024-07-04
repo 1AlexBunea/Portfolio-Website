@@ -1,14 +1,18 @@
 .bullet-point-textarea {
-    border: none;
-    resize: none;
-    background: transparent;
-    outline: none;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-  }
-  
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+.bullet-point-textarea strong {
+  font-weight: bold;
+  color: rgb(255, 121, 31);
+}

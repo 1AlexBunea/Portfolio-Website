@@ -6,31 +6,31 @@ interface BulletPointTextAreaProps {
 }
 
 const BulletPointTextArea: React.FC<BulletPointTextAreaProps> = ({ description }) => {
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   // Split the description into sentences based on periods
   const sentences = description.split('. ').map(sentence => sentence.trim()).filter(sentence => sentence.length > 0);
 
-  // Remove periods and commas from the end of each sentence
-  const cleanedSentences = sentences.map(sentence => sentence.replace(/[.,\s]*$/, ''));
+  // Convert sentences to bullet points with bolded text for phrases wrapped in ~
+  const bulletPoints = sentences.map(sentence => {
+    // Replace ~text~ with <strong>text</strong> for bold text
+    return sentence.replace(/~(.*?)~/g, '<strong>$1</strong>');
+  }).map(point => `• ${point}`).join('<br>');
 
   useEffect(() => {
-    const textarea = textareaRef.current;
-    if (textarea) {
-      // Set the height to auto first to reset any previous height settings
-      textarea.style.height = 'auto';
-      // Then set the height based on the scroll height
-      textarea.style.height = `${textarea.scrollHeight}px`;
+    const content = contentRef.current;
+    if (content) {
+      // Set the innerHTML of the content div
+      content.innerHTML = bulletPoints;
     }
-  }, [description]);
+  }, [description, bulletPoints]);
 
   return (
     <div>
-      <textarea 
-        readOnly
-        ref={textareaRef}
-        value={cleanedSentences.map(point => `• ${point}`).join('\n')}
+      <div
+        ref={contentRef}
         className="bullet-point-textarea"
+        contentEditable={false}  // Make this div read-only
       />
     </div>
   );
