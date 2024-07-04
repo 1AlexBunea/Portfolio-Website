@@ -1,6 +1,6 @@
 
 .homepage {
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -9,6 +9,16 @@
   align-items: center;
   /* text-align: center; */
 }
+
+.homepage-project {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 
 .header {
   margin-top: 20px;
@@ -36,27 +46,6 @@
   margin-right: 5%;
 }
 
-
-.nav-link {
-  color: white !important; /* Default text color with !important */
-  background-color: transparent !important; /* No background color */
-  padding: 10px 20px; /* Add padding */
-  text-decoration: none; /* No underline */
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for text color and underline */
-}
-
-.nav-link:hover {
-  color: rgb(182, 32, 32) !important; /* Change text color to red on hover with !important */
-}
-
-.nav-link.active {
-  color: rgb(182, 32, 32) !important; /* Change text color to red when active with !important */
-  text-decoration: underline !important; /* Underline the text when active with !important */
-}
-
-.navbar {
-  background-color: rgb(231, 175, 175);
-}
 
 .no-focus:focus {
   outline: none;
@@ -126,21 +115,6 @@
   transform: scale(1.1); /* Example: scale up image on hover */
 }
 
-/* @media (max-width: 400px) {
-  .navbar {
-    height: 120px;
-  }
-} */
-
-
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-.slide-in-left {
-  animation: slideInLeft 1s ease-out;
-}
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -151,45 +125,6 @@
   animation: fadeIn 1s ease-in;
 }
 
-.terminal {
-  width: 600px;
-  height: 400px;
-  background-color: #000;
-  border-radius: 5px;
-  padding: 10px;
-  overflow: hidden;
-  font-family: 'Courier New', monospace;
-}
-
-.terminal-content {
-  color: #0f0;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  animation: typing 30s steps(1000, end) infinite;
-}
-
-@keyframes typing {
-  from { 
-    height: 0; 
-  }
-  to { 
-    height: 100%; 
-  }
-}
-
-/* Blinking cursor effect */
-.terminal-content::after {
-  content: '█';
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
 
 .zoom-in {
   opacity: 0;

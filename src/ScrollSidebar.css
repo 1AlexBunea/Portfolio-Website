@@ -1,10 +1,10 @@
 .scroll-sidebar {
     position: fixed;
-    top: 50px; /* Adjust top position as needed */
+    top: 0; /* Adjust top position as needed */
     left: 0;
     width: 120px; /* Adjust width as needed */
     height: 100%; /* Full height of the viewport */
-    background-color: rgb(182, 32, 32);
+    background-color: rgb(48, 46, 46);
     overflow-y: auto;
     padding-left: 10px;
     padding-right: 10px;

@@ -17,7 +17,7 @@ function Home() {
                 <div>
                     <h1 className="fw-bold display-1 display-sm-2 display-md-3 display-lg-4" style={{
                         // fontSize:'100px',
-                        color:'rgb(182, 32, 32)'
+                        color:'white'
                     }}>Alex Bunea</h1>
                 </div>
                 <div>

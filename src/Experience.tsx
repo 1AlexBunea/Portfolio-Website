@@ -4,6 +4,7 @@ import "./Experience.css";
 import BulletPointTextArea from "./BulletPointTextArea";
 import BulletPointList from "./BulletPointList";
 
+
 const jobs = [
   "2024: Software Engineer Intern",
   "2022: Cybersecurity Analyst Intern",
@@ -141,7 +142,7 @@ const Experience = () => {
 
   return (
     <div
-      style={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 50, maxWidth:1000 }}
+      style={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 50, maxWidth:1000, marginTop:100 }}
       id="professional-experience"
     >
       {/* <ScrollSidebar></ScrollSidebar> */}
@@ -150,7 +151,7 @@ const Experience = () => {
         <h2
           className="display-1 display-sm-2 display-md-3 display-lg-4"
           style={{
-            color: "rgb(182, 32, 32)",
+            color: "white",
             paddingBottom: 30,
           }}
         >
@@ -209,7 +210,7 @@ const Experience = () => {
         id="education"
         className="display-1 display-sm-2 display-md-3 display-lg-4"
         style={{
-          color: "rgb(182, 32, 32)",
+          color: "white",
           paddingTop: 50,
         }}
       >
@@ -243,7 +244,7 @@ const Experience = () => {
         id="languages"
         className="display-1 display-sm-2 display-md-3 display-lg-4"
         style={{
-          color: "rgb(182, 32, 32)",
+          color: "white",
           paddingTop: 50,
           paddingBottom: 50,
         }}
@@ -256,7 +257,7 @@ const Experience = () => {
         className="display-1 display-sm-2 display-md-3 display-lg-4"
         id="frameworks"
         style={{
-          color: "rgb(182, 32, 32)",
+          color: "white",
           paddingTop: 50,
           paddingBottom: 50,
         }}
@@ -269,7 +270,7 @@ const Experience = () => {
         className="display-1 display-sm-2 display-md-3 display-lg-4"
         id="tools"
         style={{
-          color: "rgb(182, 32, 32)",
+          color: "white",
           paddingTop: 50,
           paddingBottom: 50,
         }}
