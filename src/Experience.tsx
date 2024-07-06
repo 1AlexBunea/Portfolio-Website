@@ -81,7 +81,6 @@ const frameworksAndTechnologies = [
   { 'name': 'Vector Databases', 'experience': 1 },
   { 'name': 'Retrieval Augmented Generation', 'experience': 1 },
   { 'name': 'Tokenization', 'experience': 1 },
-  { 'name': 'Embedding Models', 'experience': 1 },
   { 'name': 'Natural Language Processing', 'experience': 1 },
   { 'name': 'PyTorch', 'experience': 1 },
   { 'name': 'TensorFlow', 'experience': 1 },
