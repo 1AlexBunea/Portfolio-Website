@@ -1,0 +1,22 @@
+.bpoint-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .bpoint-item {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 121, 31);
+    cursor: pointer;
+    text-align: center;
+    min-width: 60px; /* Minimum width for each item */
+    width: fit-content; /* Ensures width fits content */
+  }
+  
+  .bpoint-name {
+    color: rgb(255, 121, 31);
+    font-size: 18px;
+    font-weight: bold;
+  }

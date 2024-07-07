@@ -6,18 +6,21 @@ const items = [
   { id: 1, 
     image: '/nfl-logo.png', 
     description: `NFL Prospect API`,
-    hoverText: 'Database querying project through APIs'
+    hoverText: 'Database querying project through APIs',
+    link:`https://github.com/1AlexBunea/College-Football-API`,
   },
-  // { id: 2, 
-  //   image: 'linked-in.png', 
-  //   description: `NFL Prospect API`,
-  //   hoverText: 'New Text 1',
-  // },
+  { id: 2, 
+    image: 'dumbbell.png', 
+    description: `Fitness Folio`,
+    hoverText: 'SpringBoot, PostgreSQL, React Fitness tracker',
+    link:`https://github.com/1AlexBunea/FitnessTrackerFrontEnd`,
+  },
   // { id: 3, 
   //   image: 'github-logo.png', 
   //   description: `NFL Prospect API`,
   //   hoverText: 'New Text 1',
   // },
+
 
 ];
 const Projects = () => {
@@ -37,7 +40,7 @@ const Projects = () => {
       <div className="gallery">
         {items.map(item => (
           <div key={item.id} className="gallery-item">
-            <div className="image-container" onClick={() => window.open(`https://github.com/1AlexBunea/College-Football-API`)}>
+            <div className="image-container" onClick={() => window.open(item.link)}>
               <img src={item.image} alt={item.description}/>
               <div className="hover-overlay">
                 <p>{item.hoverText}</p>

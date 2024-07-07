@@ -74,7 +74,15 @@
   transform: scale(1.2); /* Increase scale on hover */
 }
 
-
+.background-overlay {
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here (0.5 is 50% opacity) */
+}
 
 .responsive-button {
     border: 1px solid rgb(182, 32, 32);

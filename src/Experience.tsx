@@ -4,6 +4,7 @@ import "./Experience.css";
 import BulletPointTextArea from "./BulletPointTextArea";
 import ArrayList from "./ArrayList";
 import ExperiencePage from "./ExperiencePage";
+import ArrayListNoHover from "./ArrayListNoHover";
 
 
 const jobs = [
@@ -99,6 +100,17 @@ const additionalTools = [
   { "name": "LlamaIndex", "experience": 1 },
   { "name": "Ollama", "experience": 1 },
   { "name": "Postman", "experience": 1 },
+]
+
+const courses = [
+  { "name": "Principles of Computer Systems", "experience": 1 },
+  { "name": "Computer Organization and Architecture", "experience": 1 },
+  { "name": "Information Retrieval and Web Search", "experience": 1 },
+  { "name": "Data Structures", "experience": 1 },
+  { "name": "Introduction to Programming", "experience": 1 },
+  { "name": "Discrete Mathematics", "experience": 1 },
+  { "name": "Multivariable Calculus", "experience": 1 },
+  { "name": "Differential and Integral Calculus", "experience": 1 },
 ]
 
 const Experience = () => {
@@ -200,12 +212,7 @@ const Experience = () => {
         <h4>
           Relevant Coursework
         </h4>
-        <h5 className="info-h5-header">
-            Principles of Computer Systems, Computer
-            Organization and Architecture, Information Retrieval and Web Search,
-            Data Structures, Introducing to Programming, Discrete Mathematics,
-            Multivariable Calculus, Differential and Integral Calculus
-        </h5>
+        <ArrayListNoHover skills={courses}></ArrayListNoHover>
       </div>
 
       <h1
