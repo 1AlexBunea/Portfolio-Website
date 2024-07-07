@@ -24,7 +24,9 @@ function Home() {
                     minWidth:100,
                     width:'80%'
                 }}>
-                    <h4>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. Thank you for visiting my site, feel free to look around. </h4>
+                    {/* <h4>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. 
+                        Thank you for visiting my site, feel free to look around. 
+                    </h4> */}
                     <br></br>
                     <h5 style={{color:'rgb(255, 121, 31)'}}>
                         With a strong background in software development and a keen interest in innovative technologies, I strive to create impactful solutions. 
