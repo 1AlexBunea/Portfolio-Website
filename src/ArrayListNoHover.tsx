@@ -1,5 +1,5 @@
 import React from 'react';
-import './ArrayListNoHover.css'; // Import CSS file for styling
+import './ArrayList.css'; // Import CSS file for styling
 
 interface Skill {
   name: string;
@@ -10,16 +10,19 @@ interface Props {
   skills: Skill[];
 }
 
-const ArrayListNoHover: React.FC<Props> = ({ skills }) => {
+const ArrayList: React.FC<Props> = ({ skills }) => {
   return (
-    <div className="bpoint-list">
+    <div className="bullet-point-list">
       {skills.map((skill, index) => (
-        <div key={index} className="bpoint-item">
-          <div className="bpoint-name">{skill.name}</div>
+        <div key={index} className="bullet-point-item">
+          <div className="bullet-point-name">{skill.name}</div>
+          <div className="bullet-point-experience">
+            Year taken: {skill.experience}
+          </div>
         </div>
       ))}
     </div>
   );
 };
 
-export default ArrayListNoHover;
+export default ArrayList;

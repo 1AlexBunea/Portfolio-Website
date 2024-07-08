@@ -24,9 +24,6 @@ function Home() {
                     minWidth:100,
                     width:'80%'
                 }}>
-                    {/* <h4>Hello visitors, I am Alex Bunea, a computer science student at the University of Texas at Austin who lives in the Bay Area. 
-                        Thank you for visiting my site, feel free to look around. 
-                    </h4> */}
                     <br></br>
                     <h5 style={{color:'rgb(255, 121, 31)'}}>
                         With a strong background in software development and a keen interest in innovative technologies, I strive to create impactful solutions. 
@@ -35,11 +32,14 @@ function Home() {
                     </h5>
                     <br></br>
                     <div>
-                        <button className='link-button' style={{padding:10, marginRight: 10}} onClick={() => window.open("https://www.linkedin.com/in/alex-bunea-8901751b6/")}>
-                            <img src='linked-in.png' style={{height:50, width:50}}></img>
+                        <button className='link-button' style={{}} onClick={() => window.open("https://www.linkedin.com/in/alex-bunea-8901751b6/")}>
+                            <img src='linked-in.png' style={{height:60, width:60}}></img>
                         </button>
-                        <button className='link-button' style={{padding:10}} onClick={() => window.open("https://github.com/1AlexBunea")}>
+                        <button className='link-button' style={{padding:10, paddingRight: 10, paddingLeft:10, marginRight:10, marginLeft:10}} onClick={() => window.open("https://github.com/1AlexBunea")}>
                             <img src='github-logo.png' style={{height:50, width:50}}></img>
+                        </button>
+                        <button className='link-button' style={{padding:10, }} onClick={() => window.location.href = "mailto:1alexbunea@gmail.com?subject=Subject%20Here&body=Body%20content%20here"}>
+                            Email Me
                         </button>
                     </div>
 

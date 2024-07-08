@@ -5,7 +5,7 @@
 
 .bullet-point-item {
   position: relative;
-  padding: 10px;
+  padding: 10px 15px; 
   margin: 10px;
   background-color: transparent;
   border: 1px solid rgb(255, 121, 31);
@@ -13,6 +13,7 @@
   text-align: center;
   min-width: 60px; /* Minimum width for each item */
   width: fit-content; /* Ensures width fits content */
+  border-radius: 15px;
 }
 
 .bullet-point-name {
@@ -35,6 +36,7 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  border-radius: 15px;
 }
 
 .bullet-point-item:hover .bullet-point-experience {

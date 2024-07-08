@@ -31,7 +31,7 @@ function App() {
           > {/* this is the div that will have the contents */}
                 {page == 3 ? 
                   
-                  <div className="homepage fade-in" style={{backgroundImage: `linear-gradient(to top, rgb(170, 117, 87, 0.8), rgb(182, 32, 32, 0.4)), url("red-bg.png")`}}>
+                  <div className="homepage fade-in" style={{backgroundImage: `linear-gradient(to top, rgb(0, 0, 0, 0.8), rgba(35, 35, 35, 0.8)), url("forest.jpg")`}}>
                     <Header displayPage={displayPage}></Header>
                     <div className="content">
                     <header className="header">
@@ -75,9 +75,9 @@ function App() {
                       </div>
                       
                     </div>
-                    <div className="Sidebar">
+                    {/* <div className="Sidebar">
                       <Sidebar></Sidebar>
-                    </div> 
+                    </div>  */}
                     <ScrollToTopButton />
 
                   </div>

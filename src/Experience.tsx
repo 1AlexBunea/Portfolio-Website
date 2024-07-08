@@ -57,7 +57,9 @@ const company = [
 ];
 
 const codingLanguages = [
-  {"name":'HTML / CSS / JavaScript', "experience": 4},
+  {"name":'HTML', "experience": 4},
+  {"name":'CSS', "experience": 4},
+  {"name":'JavaScript', "experience": 4},
   {"name":'Python', "experience": 4},
   {"name":'Java', "experience": 2},
   {"name":'C', "experience": 1},
@@ -103,14 +105,14 @@ const additionalTools = [
 ]
 
 const courses = [
-  { "name": "Principles of Computer Systems", "experience": 1 },
-  { "name": "Computer Organization and Architecture", "experience": 1 },
+  { "name": "Principles of Computer Systems", "experience": 2024 },
+  { "name": "Computer Organization and Architecture", "experience":  2024 },
   { "name": "Information Retrieval and Web Search", "experience": 1 },
-  { "name": "Data Structures", "experience": 1 },
-  { "name": "Introduction to Programming", "experience": 1 },
-  { "name": "Discrete Mathematics", "experience": 1 },
-  { "name": "Multivariable Calculus", "experience": 1 },
-  { "name": "Differential and Integral Calculus", "experience": 1 },
+  { "name": "Data Structures", "experience": 2023 },
+  { "name": "Introduction to Programming", "experience": 2023 },
+  { "name": "Discrete Mathematics", "experience": 2023 },
+  { "name": "Multivariable Calculus", "experience": 2023 },
+  { "name": "Differential and Integral Calculus", "experience": 2022 },
 ]
 
 const Experience = () => {

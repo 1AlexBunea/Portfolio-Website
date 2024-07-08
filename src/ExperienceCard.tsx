@@ -54,14 +54,13 @@ const ExperienceCard: React.FC<JobExperience> = ({
 
   return (
     <div 
-      className={`experience-card ${showDescription ? 'expanded' : ''}`} 
-      onClick={toggleDescription}>
+      className={`experience-card ${showDescription ? 'expanded' : ''}`}>
       <div className="card-content">
         <div className="card-header">
           <h3>{title}</h3>
           <h4>{company}</h4>
           <p>{duration.start} - {duration.end}</p>
-          <h6>Click To Toggle</h6>
+          {showDescription == true ? <button onClick={toggleDescription} style={{backgroundColor: 'transparent', color:'rgb(255, 121, 31)', borderRadius:15, padding:10, border: '1px solid rgb(255, 121, 31)', width:'fit-content', marginTop:'1%'}}>See Less</button> : <button onClick={toggleDescription} style={{backgroundColor: 'transparent', color:'rgb(255, 121, 31)', borderRadius:15, marginTop:'1%', padding:10, border: '1px solid rgb(255, 121, 31)', width:'fit-content'}}>See More</button>}
         </div>
         <div 
           className="card-description" 

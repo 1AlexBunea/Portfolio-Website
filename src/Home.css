@@ -1,9 +1,12 @@
 .link-button {
-    background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     transition: all 0.3s ease;
+    height:70px;
+    /* background-color: rgba(78, 78, 78, 0.4); */
+    background-color: white;
+    font-weight: bold;
 }
 .link-button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
