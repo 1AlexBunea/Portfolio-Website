@@ -3,7 +3,6 @@ import './App.css'
 import Experience from "./Experience"
 import Project from "./Projects"
 import Home from "./Home"
-import Sidebar from "./Sidebar"
 import RotatingCube from "./RotatingCube"
 import ScrollSidebar from "./ScrollSidebar"
 import Header from "./Header"
