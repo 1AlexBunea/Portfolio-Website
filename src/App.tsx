@@ -48,7 +48,7 @@ function App() {
                   </div>
 
                 : page == 2 ? 
-                <div className="zoom-in">
+                <div className="fade-in">
                   <div className="homepage-project">
                   <Header displayPage={displayPage}></Header>
                   </div>
@@ -58,27 +58,26 @@ function App() {
                   <ScrollToTopButton />
                 </div>
                 : (page == 1 ? 
-                  <div className="homepage fade-in">
-                    <Header displayPage={displayPage}></Header>
-                    <ScrollSidebar></ScrollSidebar>
-                    <Experience></Experience>
-                    <ScrollToTopButton />
+                  <div>
+                    <div>
+                      <div className="homepage fade-in">
+                        <Header displayPage={displayPage}></Header>
+                        <ScrollSidebar></ScrollSidebar>
+                        <Experience></Experience>
+                        <ScrollToTopButton />
+                      </div>
+                    </div>
                   </div>
                 : (
                   <div>
-                    <div className="homepage zoom-in">
+                    <div className="homepage fade-in">
                       <Header displayPage={displayPage}></Header>
                       <div className="d-flex" style={{marginTop:100}}>
                         <RotatingCube></RotatingCube>
                         <Home></Home>
                       </div>
-                      
                     </div>
-                    {/* <div className="Sidebar">
-                      <Sidebar></Sidebar>
-                    </div>  */}
                     <ScrollToTopButton />
-
                   </div>
                 ))}
 
