@@ -37,7 +37,7 @@ function Home() {
                         <button className='link-button' style={{marginTop:10, padding:10, paddingRight: 10, paddingLeft:10, marginRight:5, marginLeft:5}} onClick={() => window.open("https://github.com/1AlexBunea")}>
                             <img src='github-logo.png' style={{height:50, width:50}}></img>
                         </button>
-                        <button className='link-button' style={{marginTop:10, padding:10, paddingRight: 10, paddingLeft:10, marginRight:5, marginLeft:5}} onClick={() => window.location.href = "mailto:1alexbunea@gmail.com?subject=Subject%20Here&body=Body%20content%20here"}>
+                        <button className='link-button' style={{marginTop:10, padding:10, paddingRight: 10, paddingLeft:10, marginRight:5, marginLeft:5}} onClick={() => window.location.href = "mailto:alexbunea@utexas.edu?subject=Subject%20Here&body=Body%20content%20here"}>
                             Email Me
                         </button>
                     </div>

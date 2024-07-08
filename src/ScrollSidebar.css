@@ -5,50 +5,71 @@
     width: 120px; /* Adjust width as needed */
     height: 100%; /* Full height of the viewport */
     background-color: rgb(32, 32, 32);
-    overflow-y: auto;
+    overflow-y: none;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition for hiding/showing */
-}
-
-.scroll-sidebar nav ul {
+  }
+  
+  .scroll-sidebar nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-.scroll-sidebar nav ul li {
+  }
+  
+  .scroll-sidebar nav ul li {
     padding-top: 20px;
     /* margin-bottom: 10px; */
-}
-
-.scroll-sidebar nav ul li a {
+  }
+  
+  .scroll-sidebar nav ul li a {
     text-decoration: none;
     color: #333;
     display: block;
     /* padding: 8px 0; */
     transition: background-color 0.3s;
-}
-
-.scroll-sidebar nav ul li a:hover {
+  }
+  
+  .scroll-sidebar nav ul li a:hover {
     background-color: #ddd;
-}
-
-.scroll-sidebar button {
+  }
+  
+  .scroll-sidebar button {
     background-color: transparent;
     border: 1px solid rgb(255, 121, 31);
     border-radius: 5px;
     color: rgb(255, 121, 31);
     width: 100%;
-}
-
-.sidebar-button:hover {
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-top: auto; /* Pushes the icons to the bottom */
+  }
+  
+  .icon {
+    margin: 10px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon svg {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .sidebar-button:hover {
     color: black;
     background-color: white;
-}
-
-
-@media (max-width: 1000px) {
+  }
+  
+  @media (max-width: 1300px) {
     .scroll-sidebar {
       opacity: 0;
       visibility: hidden;
@@ -56,9 +77,10 @@
   }
   
   /* Ensure the button is visible on larger screens */
-  @media (min-width: 1001px) {
+  @media (min-width: 1301px) {
     .scroll-sidebar {
       opacity: 1;
       visibility: visible;
     }
   }
+  
