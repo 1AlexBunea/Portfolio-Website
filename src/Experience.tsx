@@ -27,15 +27,15 @@ const description = [
     Learned how to deploy third-party security solutions such as ~SentinelOne~ on Raspberry Pi microcomputers using ~VNC Viewer~ to bolster endpoint security in factories. 
     `,
     `Worked in a team to perform ~market research~ on a list of 17 innovation management tools. 
-    Conducted interviews with 15 ~executives, managers, and directors from 3 different companies. 
+    Conducted interviews with 15 executives, managers, and directors from 3 different companies. 
     ~Quantified company sentiments~ using scale 1 through 5 on: features, pricing, security, customer service, and brand presence . 
     Analyzed quantitative data using ~statistical methods~ and ~data visualization techniques~ and developed a ~weighted scoring model~ to recommend the most suitable innovation management tool based on the integrated metrics. 
     Produced a 37-page report detailing ~quantitative metrics~ and ~qualitative insights~ for each tool. 
     `,
-    `Developed a solar panel ~crack detection python program~ that ~identified and classified cracks~ in over 2000 images of solar panels. 
+    `Developed a solar panel ~crack detection python program~ that ~identified and classified cracks~ in over 2,000 images of solar panels. 
     Trained ~neural network~ on a dataset of 1000 electroluminescent images, improving crack detection to an accuracy of 90%. 
     For over 1000 panels, accurately calculated total affected surface area and produced a severity grade. 
-    Created the ~pre-alpha~ code for overall production-code that reduced manual inspection time and labor costs by 99% for this use case and saving the company ~$50000 a year~. 
+    Created the ~pre-alpha~ code for overall production-code that reduced manual inspection time and labor costs by 99% for this use case and saving the company ~$50,000 a year~. 
     Programmed and deployed a ~collaboration robot~ performing pick-and-place motion for the pilot production line assisting in the ~manufacturing of 200 solar panels daily~. 
     `,
 ];
@@ -107,7 +107,7 @@ const additionalTools = [
 const courses = [
   { "name": "Principles of Computer Systems", "experience": 2024 },
   { "name": "Computer Organization and Architecture", "experience":  2024 },
-  { "name": "Information Retrieval and Web Search", "experience": 1 },
+  { "name": "Information Retrieval and Web Search", "experience": 2024 },
   { "name": "Data Structures", "experience": 2023 },
   { "name": "Introduction to Programming", "experience": 2023 },
   { "name": "Discrete Mathematics", "experience": 2023 },
