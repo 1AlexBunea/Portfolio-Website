@@ -6,7 +6,6 @@ function Home() {
     return (
         <div>
             <div className='container' style={{
-                marginLeft:'10%',
             }}>
                 <div>
                     <h1 className="fw-bold display-1 display-sm-2 display-md-3 display-lg-4" style={{
@@ -32,13 +31,13 @@ function Home() {
                     </h5>
                     <br></br>
                     <div>
-                        <button className='link-button' style={{}} onClick={() => window.open("https://www.linkedin.com/in/alex-bunea-8901751b6/")}>
+                        <button className='link-button' style={{marginTop:10, paddingRight: 10, paddingLeft:10, marginRight:5, marginLeft:5}} onClick={() => window.open("https://www.linkedin.com/in/alex-bunea-8901751b6/")}>
                             <img src='linked-in.png' style={{height:60, width:60}}></img>
                         </button>
-                        <button className='link-button' style={{padding:10, paddingRight: 10, paddingLeft:10, marginRight:10, marginLeft:10}} onClick={() => window.open("https://github.com/1AlexBunea")}>
+                        <button className='link-button' style={{marginTop:10, padding:10, paddingRight: 10, paddingLeft:10, marginRight:5, marginLeft:5}} onClick={() => window.open("https://github.com/1AlexBunea")}>
                             <img src='github-logo.png' style={{height:50, width:50}}></img>
                         </button>
-                        <button className='link-button' style={{padding:10, }} onClick={() => window.location.href = "mailto:1alexbunea@gmail.com?subject=Subject%20Here&body=Body%20content%20here"}>
+                        <button className='link-button' style={{marginTop:10, padding:10, paddingRight: 10, paddingLeft:10, marginRight:5, marginLeft:5}} onClick={() => window.location.href = "mailto:1alexbunea@gmail.com?subject=Subject%20Here&body=Body%20content%20here"}>
                             Email Me
                         </button>
                     </div>

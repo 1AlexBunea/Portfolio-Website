@@ -5,7 +5,7 @@ const RotatingCube: React.FC = () => {
   return (
     <div className="cube-container" style={{
       marginTop:"15%",
-      marginLeft:"5%"
+      marginRight:"8%"
     }}>
       <div className="cube">
         <div className="side front" style={{textAlign:'center'}}>
