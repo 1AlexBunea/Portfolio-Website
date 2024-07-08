@@ -15,13 +15,13 @@ function Home() {
                 </div>
                 <div>
                     <h5 className="display-4 display-sm-2 display-md-3 display-lg-4" style={{
-                        color:'rgba(224, 134, 92, 0.959)',
-                        maxWidth:'80%'
+                        color:'rgb(224, 134, 92)',
+                        maxWidth:'90%'
                     }}>an aspiring software engineer based in San Francisco</h5>
                 </div>
                 <div style={{
                     minWidth:100,
-                    width:'80%'
+                    width: '85%'
                 }}>
                     <br></br>
                     <h5 style={{color:'rgb(255, 121, 31)'}}>
