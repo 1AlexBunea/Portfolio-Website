@@ -27,6 +27,6 @@ Feel free to explore the code and reach out if you have any questions or opportu
 
 ## Contact
 
-You can contact me through the email button on my website or [your preferred contact method].
+You can contact me through the email button on my website or via [LinkedIn](https://www.linkedin.com/in/alex-bunea-8901751b6/).
 
 Thanks for visiting!
