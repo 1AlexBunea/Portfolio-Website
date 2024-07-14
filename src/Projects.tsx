@@ -15,13 +15,12 @@ const items = [
     hoverText: 'SpringBoot, PostgreSQL, React Fitness tracker',
     link:`https://github.com/1AlexBunea/FitnessTrackerFrontEnd`,
   },
-  // { id: 3, 
-  //   image: 'github-logo.png', 
-  //   description: `NFL Prospect API`,
-  //   hoverText: 'New Text 1',
-  // },
-
-
+  { id: 3, 
+    image: 'b-logo.png', 
+    description: `BuzzWire News`,
+    hoverText: 'React TS, Django News Site',
+    link:`https://buzz-wire-fe.vercel.app/`,
+  },
 ];
 const Projects = () => {
   return (

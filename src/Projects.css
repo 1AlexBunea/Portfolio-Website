@@ -1,47 +1,4 @@
-/* .component-item {
-  height: 600; 
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow: hidden; 
-  transition: transform 0.3s ease-in-out; 
-  display: flex; 
-  flex-direction: column;
-}
 
-.component-item:hover {
-  transform: scale(1.1); 
-}
-
-.component-item button {
-  width: 100%; 
-  display: block;
-  text-align: left; 
-}
-
-.component-item img {
-  width: 100%; 
-  border-radius: 10px;
-  object-fit: cover; 
-  background-color: #ee8d8d;
-}
-
-
-.component-item .description {
-  padding: 10px;
-  height: 45px;
-  background-color: #c42525;
-  color: white;
-  text-align: center;
-  flex-grow: 1; 
-  overflow: hidden;
-  text-overflow: ellipsis; 
-}
-
-.component-item .description p {
-  max-width: 100%; 
-  overflow-wrap: break-word; 
-  word-wrap: break-word; 
-} */
 .gallery {
   display: flex;
   flex-wrap: wrap;
