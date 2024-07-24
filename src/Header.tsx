@@ -15,9 +15,7 @@ const Header: React.FC<HeaderProps> = ({ displayPage }) => {
   return (
     <div className="header-container">
       <div className="header-content">
-        <button className='header-button' onClick={() => displayPage(3)}>
-          <img className="image-button" src="/eagle.png" alt="GitHub" style={{height:30, width:30}}/>
-        </button>   
+        <button className='header-button' onClick={() => displayPage(3)}>Home</button>   
         <button className="header-button" onClick={() => displayPage(0)}>About</button>
         <button className="header-button" onClick={() => displayPage(1)}>Experience</button>
         <button className="header-button" onClick={() => displayPage(2)}>Projects</button>
@@ -33,9 +31,7 @@ const Header: React.FC<HeaderProps> = ({ displayPage }) => {
           <div className="off-canvas slide-in-right">
             <button className='close-button' onClick={toggleOffCanvas}>Close</button>
             <div>
-              <button className='header-button' onClick={() => displayPage(3)}>
-                <img className="image-button" src="/eagle.png" alt="GitHub" style={{height:30, width:30}}/>
-              </button>   
+              <button className='header-button' onClick={() => displayPage(3)}>Home</button>   
               <button className="header-button" onClick={() => displayPage(0)}>About</button>
               <button className="header-button" onClick={() => displayPage(1)}>Experience</button>
               <button className="header-button" onClick={() => displayPage(2)}>Projects</button>
